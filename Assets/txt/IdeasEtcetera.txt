@@ -1,0 +1,46 @@
+Ludum Dare Ideas
+
+Theme: Incompatible Genre
+
+Name: Rhythm Escape
+
+Rhythym Stealth Game
+
+Musical Columns add Notes when player moves
+Left = First Columns
+Up = Second Columns
+Down = Third Columns
+Right = Fourth Columns
+
+The direction you move always adds a note, while a note will randomly be added to a remaining column.
+Each pair should result in a unique sound. and be played when the user has hit all notes.
+
+
+Player moves with arrow keys
+Player uses Number Row 1-4 to hit the notes in each column.
+Each movement bumps a note onto a column
+If they are in the hit section, the number row can be used to hit that note.
+If it progresses past the hit section the note is missed.
+
+
+The Player must pick up the key from an office, and get to the exit.
+The Player can't miss more notes than 25% of the required steps to get to the key and then to the exit.
+The Success/fail state of the musical portion will be displayed.
+The player can't be seen by a guard or they lose.
+Guards have visible vision cone, which checks for collisions and then raycast to see if they have line of sight.
+
+//If they don't move in a given time frame, drop new random notes.
+//Maybe allow players to hide in lockers.
+
+TODO:
+Make Simple layout with walls, walkable locations, a key location, guard locations, and an exit location.
+Can do this in Gimp as pixels, and generate blocks and starting locations for objects using a script based on the colors.
+
+Make guards pathfind.
+Give guards visible cone and raycast to see if they detect player.
+Make player move a square at a time when they press the arrow keys.
+Post Tutorial Splash Screen showing what each button does.
+Add GUI element to show when the notes can be hit.
+Make player collide with key and set a bool to true.
+Make player collide with door and if the bool is true then load win scene.
+Add escape button to pull up pause menu. Simply pause the game, show a fancy panel, the word paused, and unpause if they hit escape again.
