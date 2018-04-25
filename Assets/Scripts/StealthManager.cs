@@ -125,7 +125,7 @@ public class StealthManager : MonoBehaviour {
 		guard.localPosition += neighbors[Random.Range(0, neighbors.Count-1)];
 		if(player.localPosition == guard.localPosition){
 			SceneManager.LoadScene ("GameOver");
-		}	
+		}
 	}
 /*
 	private Queue<Vector3> getPath(Vector3 destination, Vector3 currentLocation){
